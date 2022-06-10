@@ -1,0 +1,38 @@
+version: '3.1'
+services:
+  # certbot:
+  #   image: certbot/certbot:latest
+  #   volumes: 
+  #     - ./certbot/conf:/etc/letsencrypt
+  #     - ./certbot/www:/var/www/certbot
+  #   command: certonly --webroot -w /var/www/certbot --force-renewal --register-unsafely-without-email -d nguyenxa.com --agree-tos
+  proxy:
+    # build:
+    #   context: ./dockerfiles
+    #   dockerfile: nginx.Dockerfile
+    image: nginx:latest
+    depends_on:
+      - odoo
+      # - certbot
+    volumes:
+    - ./nginx_conf:/etc/nginx/conf.d:rw
+    # - ./certbot/conf:/etc/letsencrypt
+    # - ./certbot/www:/var/www/certbot
+    ports:
+    - "80:80"
+    - "443:443"
+  odoo:
+    image: odoo:15.0
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+    volumes:
+      - ./odoo_conf:/etc/odoo:ro
+      - ./extra_addons:/mnt/extra-addons/custom:ro
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo

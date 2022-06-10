@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_post_all,website.post.all,model_website_post,,1,0,0,0
+access_website_post_answer_all,website.post.answer.all,model_website_post_answer,,1,0,0,0
+access_website_post_group_website_designer,website.post.group.website.designer,model_website_post,website.group_website_designer,1,1,1,1
+access_website_post_answer_group_website_designer,website.post.answer.group.website.designer,model_website_post_answer,website.group_website_designer,1,1,1,1

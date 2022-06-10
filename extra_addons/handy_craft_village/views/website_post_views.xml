@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="website_post_view_search" model="ir.ui.view">
+        <field name="name">website.post.view.search</field>
+        <field name="model">website.post</field>
+        <field name="arch" type="xml">
+            <search string="Post">
+                <field name="name" string="Post"
+                    filter_domain="['|', ('name', 'ilike', self), ('content','ilike',self)]" />
+            </search>
+        </field>
+    </record>
+
+    <record id="website_post_view_tree" model="ir.ui.view">
+        <field name="name">website.post.view.tree</field>
+        <field name="model">website.post</field>
+        <field name="arch" type="xml">
+            <tree string="Posts">
+                <field name="name" />
+                <field name="content" invisible="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="website_post_view_form" model="ir.ui.view">
+        <field name="name">website.post.view.form</field>
+        <field name="model">website.post</field>
+        <field name="arch" type="xml">
+            <form string="Post">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <field name="is_published" widget="website_redirect_button" />
+                    </div>
+                    <h1>
+                        <label for="name" class="oe_edit_only" />
+                        <field name="name" />
+                    </h1>
+                    <div attrs="{'invisible': ['|', ('content', '=', ''), ('content', '=', False)]}">
+                        <field name="short_content" />
+                    </div>
+                    <group>
+                        <group>
+                            <field name="image" widget="image"
+                                attrs="{'invisible': [('is_quiz', '=', True)]}" />
+                            <field name="is_quiz" invisible="1" />
+                        </group>
+                        <group>
+                            <field name="allow_using_image_for_carousel"
+                                attrs="{'invisible': ['|', ('image', '=', False), ('image', '=', '')]}" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="content" string="Content"
+                            attrs="{'invisible': [('is_quiz', '=', True)]}">
+                            <field name="content" attrs="{'required': [('is_quiz', '=', False)]}" />
+                        </page>
+                        <page name="answer" string="Answers"
+                            attrs="{'invisible': [('is_quiz', '=', False)]}">
+                            <field name="answer_ids">
+                                <tree editable="bottom">
+                                    <field name="name" />
+                                    <field name="correct" widget="boolean_toggle" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="website_post_action" model="ir.actions.act_window">
+        <field name="name">Posts</field>
+        <field name="res_model">website.post</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_quiz', '=', False)]</field>
+        <field name="context">{'default_is_quiz': False}</field>
+    </record>
+
+    <record id="website_quiz_action" model="ir.actions.act_window">
+        <field name="name">Quizes</field>
+        <field name="res_model">website.post</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_quiz', '=', True)]</field>
+        <field name="context">{'default_is_quiz': True}</field>
+    </record>
+
+</odoo>

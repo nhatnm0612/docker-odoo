@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="website_handy_craft_menu"
+        name="Website Data"
+        parent="website.menu_website_configuration"
+        sequence="1000"/>
+
+    <menuitem
+        id="website_post_menu"
+        name="Posts"
+        action="website_post_action"
+        parent="website_handy_craft_menu"
+        sequence="10"/>
+
+    <menuitem
+        id="website_post_quiz_menu"
+        name="Quizes"
+        action="website_quiz_action"
+        parent="website_handy_craft_menu"
+        sequence="20"/>
+
+    <menuitem
+        id="base.menu_users"
+        name="Users &amp; Companies"
+        parent="website.menu_website_configuration"
+        sequence="2000"/>
+
+    <menuitem
+        id="handy_craft_village.new_website_redirect"
+        action="website.action_website_rewrite_list"
+        name="Redirects"
+        parent="website_handy_craft_menu"
+        groups="website.group_website_designer"
+        sequence="30"/>
+
+</odoo>

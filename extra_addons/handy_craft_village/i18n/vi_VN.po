@@ -1,0 +1,270 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* handy_craft_village
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-09 15:46+0000\n"
+"PO-Revision-Date: 2022-06-09 15:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.homepage
+msgid "#{_post.name}"
+msgstr ""
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.post
+msgid "#{post.name}"
+msgstr ""
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.homepage
+msgid ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                        More..."
+msgstr ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                        Xem thêm..."
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.homepage
+msgid ""
+"<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"/>\n"
+"                    <span class=\"sr-only\">Next</span>"
+msgstr ""
+"<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"/>\n"
+"                    <span class=\"sr-only\">Tiếp theo</span>"
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.homepage
+msgid ""
+"<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"/>\n"
+"                    <span class=\"sr-only\">Previous</span>"
+msgstr ""
+"<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"/>\n"
+"                    <span class=\"sr-only\">Quay lại</span>"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__allow_using_image_for_carousel
+msgid "Allow Using Image For Carousel"
+msgstr "Dùng làm ảnh bìa"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__name
+msgid "Answer"
+msgstr "Câu trả lời"
+
+#. module: handy_craft_village
+#: model:ir.model.constraint,message:handy_craft_village.constraint_website_post_answer_post_id_name_uniq
+msgid "Answer should be unique per quiz!"
+msgstr "Câu trả lời phải là duy nhất với mỗi câu hỏi!"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__answer_ids
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.website_post_view_form
+msgid "Answers"
+msgstr "Trả lời"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__can_publish
+msgid "Can Publish"
+msgstr ""
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.quiz_answer
+msgid "Congrats, you got every answers correctly!"
+msgstr "Chúc mừng, bạn đã trả lời đúng tất cả câu hỏi!"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__content
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.website_post_view_form
+msgid "Content"
+msgstr "Nội dung"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__correct
+msgid "Correct?"
+msgstr "Câu trả lời đúng?"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__create_uid
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__create_date
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__display_name
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__id
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__id
+msgid "ID"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__is_published
+msgid "Is Published"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post____last_update
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__write_uid
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__write_date
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: handy_craft_village
+#: code:addons/handy_craft_village/models/website_post.py:0
+#, python-format
+msgid "Need image for carousel!"
+msgstr "Cần ảnh mới tạo được ảnh bìa"
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.website_post_view_form
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.website_post_view_search
+msgid "Post"
+msgstr "Bài viết"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__image
+msgid "Post Image"
+msgstr "Ảnh bài viết"
+
+#. module: handy_craft_village
+#: model:ir.actions.act_window,name:handy_craft_village.website_post_action
+#: model:ir.ui.menu,name:handy_craft_village.website_post_menu
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.website_post_view_tree
+msgid "Posts"
+msgstr "Bài viết"
+
+#. module: handy_craft_village
+#: model:website.menu,name:handy_craft_village.website_menu_quiz
+msgid "Quiz"
+msgstr "Câu hỏi"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post_answer__post_id
+msgid "Quiz Post"
+msgstr "Câu hỏi"
+
+#. module: handy_craft_village
+#: code:addons/handy_craft_village/models/website_post.py:0
+#, python-format
+msgid "Quiz needs answers!"
+msgstr "Câu hỏi cần câu trả lời!"
+
+#. module: handy_craft_village
+#: code:addons/handy_craft_village/models/website_post.py:0
+#, python-format
+msgid "Quiz needs wrong answer!"
+msgstr "Câu hỏi cần phải có trả lời sai!"
+
+#. module: handy_craft_village
+#: code:addons/handy_craft_village/models/website_post.py:0
+#, python-format
+msgid "Quiz required 1 correct answer!"
+msgstr "Câu hỏi cần 1 câu trả lời đúng!"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__is_quiz
+msgid "Quiz?"
+msgstr "Là câu hỏi?"
+
+#. module: handy_craft_village
+#: model:ir.actions.act_window,name:handy_craft_village.website_quiz_action
+#: model:ir.ui.menu,name:handy_craft_village.website_post_quiz_menu
+msgid "Quizes"
+msgstr "Câu hỏi"
+
+#. module: handy_craft_village
+#: model:ir.ui.menu,name:handy_craft_village.new_website_redirect
+msgid "Redirects"
+msgstr "Chuyển hướng"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__short_content
+msgid "Short Content"
+msgstr "Nội dung vắn tắt"
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.quiz
+msgid "Submit"
+msgstr "Gửi"
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.quiz_answer
+msgid "Thanks for submit, you got"
+msgstr "Cám ơn vì đã trả lời, bạn đạt"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,help:handy_craft_village.field_website_post__website_url
+msgid "The full URL to access the document through the website."
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__name
+msgid "Title"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__website_published
+msgid "Visible on current website"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.ui.menu,name:handy_craft_village.website_handy_craft_menu
+msgid "Website Data"
+msgstr "Dữ liệu Website"
+
+#. module: handy_craft_village
+#: model:ir.model.fields,field_description:handy_craft_village.field_website_post__website_url
+msgid "Website URL"
+msgstr ""
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.post
+msgid "by -"
+msgstr "bởi -"
+
+#. module: handy_craft_village
+#: model_terms:ir.ui.view,arch_db:handy_craft_village.quiz_answer
+msgid "correct answers!"
+msgstr "câu trả lời đúng!"
+
+#. module: handy_craft_village
+#: model:ir.model,name:handy_craft_village.model_website_post
+msgid "website.post"
+msgstr ""
+
+#. module: handy_craft_village
+#: model:ir.model,name:handy_craft_village.model_website_post_answer
+msgid "website.post.answer"
+msgstr ""
